@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LuxeNest Properties — Curated luxury homes, penthouses, and estates. Schedule a private viewing with our advisors." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>LuxeNest Properties — Curated Luxury Homes & Estates</title>
+  </head>
+  <body>
+    <!--
+      Hidden static HTML form for Netlify Forms detection at build time.
+      Netlify's build bot scans the deployed HTML for forms with the
+      data-netlify attribute and registers their fields. The React form
+      then submits a urlencoded POST to "/" with the matching form-name.
+    -->
+    <form name="inquiry" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="fullName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="propertyInterest" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
